@@ -7,13 +7,13 @@
         "awsvpcConfiguration": {
             "subnets": ["subnet-00dec4d6c638c50ca", "subnet-03dd9ff88ac97d51a"],
             "securityGroups": [
-                "$sg"
+                "${sg}"
             ],
             "assignPublicIp": "ENABLED"
         }
     },
     "loadBalancers": [{
-        "targetGroupArn": "$delete",
+        "targetGroupArn": "${delete}",
         "containerName": "barca-delete-container-green",
         "containerPort": 8080
     }]
